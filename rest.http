@@ -1,0 +1,34 @@
+get http://localhost:3000/api/products
+###
+get http://localhost:3000/api/categories
+###
+get http://localhost:3000/api/products/4
+###
+delete http://localhost:3000/api/products/3
+###
+patch http://localhost:3000/api/products/4
+Content-Type: application/json
+
+{
+  "name": "hard drive",
+  "price": 39,
+  "categoryId": 1
+}
+###
+post http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "cctv",
+    "price": 87,
+    "categoryId": 3
+}
+###
+
+
+
+
+
+
+
+
